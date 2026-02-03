@@ -1,5 +1,5 @@
 import "../assets/Navbar.css"
-export default function Navbar() {
+export default function DashBoard() {
   return (
     <>
       <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#0d47a1" }}>
