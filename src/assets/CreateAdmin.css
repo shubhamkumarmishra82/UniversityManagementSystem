@@ -1,0 +1,53 @@
+/* Full page center alignment */
+.create-admin-page {
+  min-height: 100vh;
+  background-color: #f1f5f9; /* Light gray background */
+  padding: 20px;
+}
+
+/* Card styling */
+.create-admin-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.create-admin-card h2 {
+  color: #0d47a1;
+}
+
+/* Inputs */
+.create-admin-card .form-control {
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-admin-card .form-control:focus {
+  border-color: #0d47a1;
+  box-shadow: 0 0 5px rgba(13, 71, 161, 0.5);
+}
+
+/* Button */
+.create-admin-card .btn-primary {
+  background-color: #0d47a1;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.create-admin-card .btn-primary:hover {
+  background-color: #094080;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .create-admin-card {
+    padding: 20px;
+  }
+}

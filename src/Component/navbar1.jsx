@@ -1,11 +1,12 @@
-import "../assets/navbar1.css"
-export default function Navbar() {
+import { NavLink } from "react-router-dom";
+
+export default function Navbar1() {
   return (
-    <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#0d47a1" }}>
+    <nav className="navbar navbar-expand-lg fixed-top" style={{ backgroundColor: "#0d47a1" }}>
       <div className="container">
         {/* Left side: University Name */}
         <a className="navbar-brand text-white fw-bold" href="#">
-          College Management System
+          CollegeManagement
         </a>
 
         {/* Toggler for mobile */}
@@ -44,16 +45,16 @@ export default function Navbar() {
               </a>
               <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    Login
-                  </a>
+                  <NavLink className="dropdown-item" to="/login">
+                    Admin-Login
+                  </NavLink>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <NavLink className="dropdown-item" to="/create">
                     Create-Admin
-                  </a>
+                  </NavLink>
                 </li>
-             
+               
               </ul>
             </li>
           </ul>
