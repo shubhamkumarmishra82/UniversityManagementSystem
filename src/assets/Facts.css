@@ -1,0 +1,30 @@
+.why-us {
+  background: #f8f9fa;
+  padding: 70px 0;
+}
+
+.why-us h2 {
+  font-weight: 700;
+}
+
+.why-us h2 span {
+  color: #0d47a1;
+}
+
+.why-us h3 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0d47a1;
+}
+
+.why-us p {
+  font-weight: 500;
+  color: #555;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .why-us h3 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,55 @@
+.cta-section {
+  background-color: #0d47a1; /* University blue */
+  color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Heading */
+.cta-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button */
+.cta-section .btn {
+  background-color: #ffffff;
+  color: #0d47a1;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  background-color: #cfe0fc; /* light blue hover */
+  color: #0d47a1;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-section h2 {
+    font-size: 28px;
+  }
+
+  .cta-section p {
+    font-size: 16px;
+  }
+
+  .cta-section .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}

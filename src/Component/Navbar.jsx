@@ -1,75 +1,112 @@
-export default function Navbar(){
-    return(
-        <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-success">
-  <div className="container-fluid">
-    <a className="navbar-brand text-light fw-bold" href="#">UniversityManagementSystem</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle text-light fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           New Information
+export default function Navbar() {
+  return (
+    <>
+      <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#0d47a1" }}>
+        <div className="container-fluid">
+          <a className="navbar-brand text-white fw-bold" href="#">
+            UniversityManagementSystem
           </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">Faculty</a></li>
-         <li><a className="dropdown-item" href="#">Student</a></li>
-          </ul>
-        </li>
-         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle text-light fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            View Inforamtion
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">Faculty</a></li>
-         <li><a className="dropdown-item" href="#">Student</a></li>
-          </ul>
-        </li>
-         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle text-light fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Update Information
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">Faculty</a></li>
-         <li><a className="dropdown-item" href="#">Student</a></li>
-          </ul>
-        </li>
-            <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle text-light fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Apply Leave
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item " href="#">Faculty Leave</a></li>
-         <li><a className="dropdown-item " href="#">Student Leave</a></li>
-          </ul>
-        </li>
-            <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle text-light fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            view Leave
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">faculty Leave</a></li>
-         <li><a className="dropdown-item " href="#">Student Leave</a></li>
-          </ul>
-        </li>
+          <button
+            className="navbar-toggler border-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            {/* White toggler bars */}
+            <span
+              className="navbar-toggler-icon"
+              style={{
+                backgroundImage:
+                  "url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\")",
+              }}
+            ></span>
+          </button>
 
-                <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle text-light fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Fee
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="#">Fees Structure</a></li>
-         <li><a className="dropdown-item " href="#">Student Fees Form</a></li>
-          </ul>
-        </li>
-      
-      </ul>
-    
-    </div>
-  </div>
-</nav>
-        </>
-    )
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              {/* Dropdown 1 */}
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle text-white fw-bold"
+                  href="#"
+                  id="navbarDropdown1"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  New Information
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a className="dropdown-item" href="#">Faculty</a></li>
+                  <li><a className="dropdown-item" href="#">Student</a></li>
+                </ul>
+              </li>
+
+              {/* Dropdown 2 */}
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle text-white fw-bold"
+                  href="#"
+                  id="navbarDropdown2"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  View Information
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a className="dropdown-item" href="#">Faculty</a></li>
+                  <li><a className="dropdown-item" href="#">Student</a></li>
+                </ul>
+              </li>
+
+              {/* Remaining dropdowns */}
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Update Information
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a className="dropdown-item" href="#">Faculty</a></li>
+                  <li><a className="dropdown-item" href="#">Student</a></li>
+                </ul>
+              </li>
+
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Apply Leave
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a className="dropdown-item" href="#">Faculty Leave</a></li>
+                  <li><a className="dropdown-item" href="#">Student Leave</a></li>
+                </ul>
+              </li>
+
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  View Leave
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a className="dropdown-item" href="#">Faculty Leave</a></li>
+                  <li><a className="dropdown-item" href="#">Student Leave</a></li>
+                </ul>
+              </li>
+
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fee
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a className="dropdown-item" href="#">Fees Structure</a></li>
+                  <li><a className="dropdown-item" href="#">Student Fees Form</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </>
+  );
 }
