@@ -20,7 +20,7 @@ export default function BreadCrum() {
       <SwiperSlide>
         <div className="slide-container">
           <img src="/Images/image.png" className="slide-image" alt="Slide 1" />
-          <div className="slide-text">Aravali College Of Engineering and Management</div>
+          <div className="slide-text">Aravali College of Engineering and Management</div>
         </div>
       </SwiperSlide>
      <SwiperSlide>

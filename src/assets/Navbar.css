@@ -1,0 +1,11 @@
+/* Make navbar toggler border always white */
+.navbar-toggler {
+  border-color: #fff; /* normal state */
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border-color: #fff;   /* clicked/focused state */
+  box-shadow: none;     /* remove black glow/shadow */
+  outline: none;        /* remove default outline */
+}

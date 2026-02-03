@@ -1,3 +1,4 @@
+import "../assets/Navbar.css"
 export default function Navbar() {
   return (
     <>
@@ -6,14 +7,16 @@ export default function Navbar() {
           <a className="navbar-brand text-white fw-bold" href="#">
             UniversityManagementSystem
           </a>
+       
           <button
-            className="navbar-toggler border-light"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+        
           >
             {/* White toggler bars */}
             <span

@@ -8,7 +8,7 @@ export default function Footer() {
 
           {/* About */}
           <div className="col-md-4 mb-4">
-            <h5 className="fw-bold">UGC University</h5>
+            <h5 className="fw-bold"> Aravali College of Engineering and Management</h5>
             <p>
               Empowering students with knowledge and skills for a brighter future. 
               Join our programs and discover your potential.
@@ -19,19 +19,17 @@ export default function Footer() {
           <div className="col-md-4 mb-4">
             <h5 className="fw-bold">Quick Links</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="footer-link">About Us</a></li>
-              <li><a href="#" className="footer-link">Programs</a></li>
-              <li><a href="#" className="footer-link">Admissions</a></li>
-              <li><a href="#" className="footer-link">Contact</a></li>
+              <li><a href="/login" className="footer-link">Login</a></li>
+              
             </ul>
           </div>
 
           {/* Contact */}
           <div className="col-md-4 mb-4">
             <h5 className="fw-bold">Contact Us</h5>
-            <p>Email: info@ugcuniversity.com</p>
-            <p>Phone: +91 123 456 7890</p>
-            <p>Address: 123 University Road, City, Country</p>
+            <p>Email:shubham9801033816@gmail.com</p>
+            <p>Phone: +91 8285110736</p>
+            <p>Address:sec-3 Faridabad Haryana</p>
             <div className="social-icons mt-2">
               <a href="#" className="me-3"><i className="bi bi-facebook"></i></a>
               <a href="#" className="me-3"><i className="bi bi-twitter"></i></a>
@@ -44,7 +42,7 @@ export default function Footer() {
         <hr style={{ borderColor: "#ffffff50" }} />
 
         <div className="text-center pb-3">
-          &copy; 2026 UGC University. All Rights Reserved.
+          &copy; 2026 Aravali College of Engineering and Management. All Rights Reserved.
         </div>
       </div>
     </footer>
