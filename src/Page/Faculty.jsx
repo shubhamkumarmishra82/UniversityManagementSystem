@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const AddFaculty = () => {
+export default function Faculty() {
   const [faculty, setFaculty] = useState({
     name: "",
     email: "",
@@ -174,4 +174,4 @@ const AddFaculty = () => {
   )
 };
 
-export default AddFaculty;
+

@@ -2,7 +2,7 @@ import  { useState } from "react";
 import "../assets/CreateAdmin.css";
 import { useNavigate } from "react-router-dom";
 
-export default function AdminLogin({setIsLoggedIn}) {
+export default function AdminLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
    const navigate = useNavigate()
@@ -24,9 +24,8 @@ export default function AdminLogin({setIsLoggedIn}) {
             })
            })
            if(response.ok){
-            localStorage.setItem("isLoggedIn", "true");
-setIsLoggedIn(true);
-
+            localStorage.setItem("email" , email)
+            localStorage.setItem("password" , password)
             navigate("/dashboard")
            }
            else{

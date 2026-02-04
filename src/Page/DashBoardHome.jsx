@@ -1,117 +1,128 @@
-import { Link } from "react-router-dom";
-
-const DashboardHome = () => {
+import { Link, NavLink } from "react-router-dom";
+import "../assets/Navbar.css"
+import DashboardHome from "./DashBoardHome";
+export default function DashBoard() {
   return (
-    <div style={{ padding: "10px" }}>
+    <>
+      <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#0d47a1" }}>
+        <div className="container-fluid">
+          <a className="navbar-brand text-white fw-bold" href="#">
+            CollegeManagement
+          </a>
+       
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        
+          >
+            {/* White toggler bars */}
+            <span
+              className="navbar-toggler-icon"
+              style={{
+                backgroundImage:
+                  "url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E\")",
+              }}
+            ></span>
+          </button>
 
-      
-      <div
-        style={{
-          background: "linear-gradient(135deg, #1e40af, #2563eb)",
-          color: "#fff",
-          padding: "30px",
-          borderRadius: "12px",
-          marginBottom: "30px"
-        }}
-      >
-        <h2 style={{ margin: 0 }}>Admin Dashboard 👨‍💼</h2>
-        <p style={{ opacity: 0.9, marginTop: "6px" }}>
-          Manage students, faculty & leave system from one place
-        </p>
-      </div>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              {/* Dropdown 1 */}
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle text-white fw-bold"
+                  href="#"
+                  id="navbarDropdown1"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  New Information
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><NavLink className="dropdown-item" to="/dashboard/faculty">Faculty</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="#">Student</NavLink></li>
+                </ul>
+              </li>
 
+              {/* Dropdown 2 */}
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle text-white fw-bold"
+                  href="#"
+                  id="navbarDropdown2"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  View Information
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a className="dropdown-item" href="#">Faculty</a></li>
+                  <li><a className="dropdown-item" href="#">Student</a></li>
+                </ul>
+              </li>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-          gap: "20px",
-          marginBottom: "35px"
-        }}
-      >
-        <StatCard title="Total Students" value="1200+" color="#22c55e" />
-        <StatCard title="Total Faculty" value="85+" color="#f97316" />
-        <StatCard title="Students Leaves" value="14" color="#ef4444" />
-        <StatCard title="Faculty Leaves" value="52" color="#3b82f6" />
-      </div>
+              {/* Remaining dropdowns */}
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Update Information
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a className="dropdown-item" href="#">Faculty</a></li>
+                  <li><a className="dropdown-item" href="#">Student</a></li>
+                </ul>
+              </li>
 
-     
-      <div style={boxStyle}>
-        <h3 style={{ marginBottom: "20px" }}>Quick Actions</h3>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Apply Leave
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a className="dropdown-item" href="#">Faculty Leave</a></li>
+                  <li><a className="dropdown-item" href="#">Student Leave</a></li>
+                </ul>
+              </li>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-            gap: "15px"
-          }}
-        >
-          <ActionBtn text="➕ Add Student Info" to="/dashboard/add-student" />
-          <ActionBtn text="➕ Add Faculty Info" to="/dashboard/add-faculty" />
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  View Leave
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a className="dropdown-item" href="#">Faculty Leave</a></li>
+                  <li><a className="dropdown-item" href="#">Student Leave</a></li>
+                </ul>
+              </li>
 
-          <ActionBtn text="👀 View Student Info" to="/dashboard/view-student" />
-          <ActionBtn text="👀 View Faculty Info" to="/dashboard/view-faculty" />
-
-          <ActionBtn text="✏️ Update Student Info" to="/dashboard/update-student" />
-          <ActionBtn text="✏️ Update Faculty Info" to="/dashboard/update-faculty" />
-
-          <ActionBtn text="📝 Apply Leave (Student)" to="/dashboard/apply-leave-student" />
-          <ActionBtn text="📝 Apply Leave (Faculty)" to="/dashboard/apply-leave-faculty" />
-
-          <ActionBtn text="📄 View Leave (Student)" to="/dashboard/view-leave-student" />
-          <ActionBtn text="📄 View Leave (Faculty)" to="/dashboard/view-leave-faculty" />
-           <ActionBtn text="📄 Fee Structure" to="/dashboard/view-leave-student" />
-          <ActionBtn text="📄 Student fees form" to="/dashboard/view-leave-faculty" />
-        </div>
-      </div>
-
-    </div>
-  );
-};
-
-/* ===== Reusable Components ===== */
-
-const StatCard = ({ title, value, color }) => (
-  <div
-    style={{
-      background: "#fff",
-      padding: "22px",
-      borderRadius: "10px",
-      boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-      borderLeft: `5px solid ${color}`
-    }}
-  >
-    <h4 style={{ margin: 0 }}>{title}</h4>
-    <h2 style={{ color, marginTop: "8px" }}>{value}</h2>
-  </div>
-);
-
-const ActionBtn = ({ text, to }) => (
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fee
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a className="dropdown-item" href="#">Fees Structure</a></li>
+                  <li><a className="dropdown-item" href="#">Student Fees Form</a></li>
+                </ul>
+              </li>
+                   <li className="nav-item">
   <Link
-    to={to}
-    style={{
-      background: "#f8fafc",
-      border: "1px solid #e5e7eb",
-      padding: "14px",
-      borderRadius: "8px",
-      textDecoration: "none",
-      color: "#0f172a",
-      fontWeight: "500",
-      transition: "0.2s",
-      textAlign: "center"
-    }}
-    onMouseEnter={(e) => (e.target.style.background = "#e0e7ff")}
-    onMouseLeave={(e) => (e.target.style.background = "#f8fafc")}
+    to="/logout"
+    className="nav-link text-white fw-bold"
+    style={{ cursor: "pointer" }}
   >
-    {text}
+    Logout
   </Link>
-);
+</li>
 
-const boxStyle = {
-  background: "#ffffff",
-  padding: "25px",
-  borderRadius: "12px",
-  boxShadow: "0 4px 14px rgba(0,0,0,0.08)"
-};
-
-export default DashboardHome;
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <DashboardHome/>
+    </>
+  );
+}

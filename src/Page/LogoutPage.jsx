@@ -1,15 +1,16 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Logout = ({ setIsLoggedIn }) => {
+const Logout = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-   localStorage.removeItem("isLoggedIn");
-setIsLoggedIn(false);
+     localStorage.removeItem("email")
+     localStorage.removeItem("password")
+
  
     navigate("/");
-  }, [navigate, setIsLoggedIn]);
+  }, [navigate]);
 
   return <h3>Logging out...</h3>;
 };
