@@ -1,4 +1,5 @@
 import "../assets/Navbar.css"
+import DashboardHome from "./DashBoardHome";
 export default function DashBoard() {
   return (
     <>
@@ -110,6 +111,7 @@ export default function DashBoard() {
           </div>
         </div>
       </nav>
+      <DashboardHome/>
     </>
   );
 }
