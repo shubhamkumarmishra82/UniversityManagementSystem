@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import "../assets/Navbar.css"
 import DashboardHome from "./DashBoardHome";
+
 export default function DashBoard() {
   return (
     <>
@@ -45,7 +46,7 @@ export default function DashBoard() {
                   New Information
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown1">
-                  <li><NavLink className="dropdown-item" to="/dashboard/faculty">Faculty</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/faculty">Faculty</NavLink></li>
                   <li><NavLink className="dropdown-item" to="#">Student</NavLink></li>
                 </ul>
               </li>
@@ -63,8 +64,8 @@ export default function DashBoard() {
                   View Information
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown2">
-                  <li><a className="dropdown-item" href="#">Faculty</a></li>
-                  <li><a className="dropdown-item" href="#">Student</a></li>
+                  <li><NavLink className="dropdown-item" to="/facultyview">Faculty</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="#">Student</NavLink></li>
                 </ul>
               </li>
 
@@ -123,6 +124,7 @@ export default function DashBoard() {
         </div>
       </nav>
       <DashboardHome/>
+   
     </>
   );
 }

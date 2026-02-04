@@ -47,7 +47,7 @@ export default function Faculty() {
     e.preventDefault();
     if (validate()) {
       const response = await fetch("http://localhost:9090/faculty/create", {
-        method: "POST",
+        method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: formData.name,

@@ -4,7 +4,9 @@ import Cta from "../Component/Cta";
 import Facility from "../Component/Facility";
 import Facts from "../Component/Facts";
 import Feature from "../Component/Feature";
+import Footer from "../Component/Footer";
 import Testimonials from "../Component/Testimonial";
+
 
 
 export default function HomePage(){
@@ -17,6 +19,7 @@ export default function HomePage(){
         <Facility/>
       <Testimonials/>
       <Cta/>
+      <Footer/>
         </>
     )
 }
