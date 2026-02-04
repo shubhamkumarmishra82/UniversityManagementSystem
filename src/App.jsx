@@ -8,6 +8,7 @@ import DashBoard from "./Page/DashBoard";
 import LogoutPage from "./Page/LogoutPage";
 import Faculty from "./Page/Faculty";
 import FacultyView from "./Page/Faculty/FacultyViewPage";
+import FacultyUpdate from "./Page/Faculty/FacultyUpdate";
 
 export default function App() {
 
@@ -22,7 +23,7 @@ export default function App() {
         <Route path="/logout" element={<LogoutPage/>}></Route>
         <Route path="/faculty" element={<Faculty/>}></Route>
         <Route path="/facultyview" element={<FacultyView/>}></Route>
-             <Route path="/facultyupdate/${faculty.id}" element={<FacultyView/>}></Route>
+          <Route path="/facultyupdate/:id" element={<FacultyUpdate/>} />
 
 
        
