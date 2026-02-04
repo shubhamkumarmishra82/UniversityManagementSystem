@@ -24,7 +24,9 @@ export default function AdminLogin({setIsLoggedIn}) {
             })
            })
            if(response.ok){
-            setIsLoggedIn(true)
+            localStorage.setItem("isLoggedIn", "true");
+setIsLoggedIn(true);
+
             navigate("/dashboard")
            }
            else{
