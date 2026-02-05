@@ -65,7 +65,7 @@ export default function DashBoard() {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown2">
                   <li><NavLink className="dropdown-item" to="/facultyview">Faculty</NavLink></li>
-                  <li><NavLink className="dropdown-item" to="#">Student</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/studentview">Student</NavLink></li>
                 </ul>
               </li>
 

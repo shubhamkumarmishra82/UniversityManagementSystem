@@ -10,6 +10,7 @@ import Faculty from "./Page/Faculty";
 import FacultyView from "./Page/Faculty/FacultyViewPage";
 import FacultyUpdate from "./Page/Faculty/FacultyUpdate";
 import StudentCreatePage from "./Page/Student/StudentCreatePage";
+import StudentViewPage from "./Page/Student/StudentViewPage";
 
 export default function App() {
 
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/facultyview" element={<FacultyView/>}></Route>
           <Route path="/facultyupdate/:id" element={<FacultyUpdate/>} />
          <Route path="/student" element={<StudentCreatePage/>}></Route>
+         <Route path="/studentview" element={<StudentViewPage/>}></Route>
 
        
       </Routes>
