@@ -9,6 +9,7 @@ import LogoutPage from "./Page/LogoutPage";
 import Faculty from "./Page/Faculty";
 import FacultyView from "./Page/Faculty/FacultyViewPage";
 import FacultyUpdate from "./Page/Faculty/FacultyUpdate";
+import StudentCreatePage from "./Page/Student/StudentCreatePage";
 
 export default function App() {
 
@@ -24,7 +25,7 @@ export default function App() {
         <Route path="/faculty" element={<Faculty/>}></Route>
         <Route path="/facultyview" element={<FacultyView/>}></Route>
           <Route path="/facultyupdate/:id" element={<FacultyUpdate/>} />
-
+         <Route path="/student" element={<StudentCreatePage/>}></Route>
 
        
       </Routes>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import FacultyUpdate from "./FacultyUpdate";
 
 export default function FacultyViewPage() {
   const [facultyData, setFacultyData] = useState([]); // <-- array
@@ -74,7 +75,7 @@ export default function FacultyViewPage() {
                 {/* Update Icon */}
                 <td>
                   <Link
-                    to={`/facultyupdate/${faculty.id}`}
+                    to={`/facultyupdate/${faculty.id}`} 
                     className="text-primary fs-5"
                   >
                     <i className="bi bi-pencil-fill"></i>
