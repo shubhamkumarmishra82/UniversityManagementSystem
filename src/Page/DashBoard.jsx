@@ -74,8 +74,8 @@ export default function DashBoard() {
                   Apply Leave
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="#">Faculty Leave</a></li>
-                  <li><a className="dropdown-item" href="#">Student Leave</a></li>
+                  <li><NavLink className="dropdown-item" to="#">Faculty Leave</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/studentleave">Student Leave</NavLink></li>
                 </ul>
               </li>
 
@@ -84,8 +84,8 @@ export default function DashBoard() {
                   View Leave
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="#">Faculty Leave</a></li>
-                  <li><a className="dropdown-item" href="#">Student Leave</a></li>
+                  <li><NavLink className="dropdown-item" to="#">Faculty Leave</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/student/view/leave">Student Leave</NavLink></li>
                 </ul>
               </li>
 

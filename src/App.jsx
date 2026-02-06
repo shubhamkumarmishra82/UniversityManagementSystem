@@ -12,6 +12,9 @@ import FacultyUpdate from "./Page/Faculty/FacultyUpdate";
 import StudentCreatePage from "./Page/Student/StudentCreatePage";
 import StudentViewPage from "./Page/Student/StudentViewPage";
 import StudentUpdatePage from "./Page/Student/StudentUpdatePage";
+import StudentCreateLeaveForm from "./Page/StudentLeave/StudentCreateLeavePage";
+import StudentViewLeavePage from "./Page/StudentLeave/StudentViewLeavePage";
+import StudentUpdateLeaveForm from "./Page/StudentLeave/StudentUpdateLeavePage";
 
 export default function App() {
 
@@ -30,7 +33,10 @@ export default function App() {
          <Route path="/student" element={<StudentCreatePage/>}></Route>
          <Route path="/studentview" element={<StudentViewPage/>}></Route>
          <Route path="/studentupdate/:id" element={<StudentUpdatePage/>} />  
-
+         <Route path="/studentleave" element={<StudentCreateLeaveForm/>}></Route>
+         <Route path="//student/view/leave" element={<StudentViewLeavePage/>}></Route>
+         <Route path="/student/leave/update/:id" element={<StudentUpdateLeaveForm/>}></Route>
+ 
        
       </Routes>
     </BrowserRouter>
