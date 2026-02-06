@@ -60,7 +60,7 @@ export default function DashboardHome() {
       <div className="row g-4">
 
         <div className="col-md-3">
-          <Link to="/dashboard/faculty" className="text-decoration-none">
+          <Link to="/faculty" className="text-decoration-none">
             <div className="card action-card action-primary text-center">
               <div className="card-body">
                 <h6 className="fw-bold">Add Faculty</h6>
@@ -71,7 +71,7 @@ export default function DashboardHome() {
         </div>
 
         <div className="col-md-3">
-          <Link to="/dashboard/student" className="text-decoration-none">
+          <Link to="/student" className="text-decoration-none">
             <div className="card action-card action-success text-center">
               <div className="card-body">
                 <h6 className="fw-bold">Add Student</h6>
@@ -82,7 +82,7 @@ export default function DashboardHome() {
         </div>
 
         <div className="col-md-3">
-          <Link to="/dashboard/student-leave" className="text-decoration-none">
+          <Link to="/studentview" className="text-decoration-none">
             <div className="card action-card action-warning text-center">
               <div className="card-body">
                 <h6 className="fw-bold">View Student</h6>
@@ -93,7 +93,7 @@ export default function DashboardHome() {
         </div>
 
         <div className="col-md-3">
-          <Link to="/dashboard/faculty-leave" className="text-decoration-none">
+          <Link to="/facultyview" className="text-decoration-none">
             <div className="card action-card action-danger text-center">
               <div className="card-body">
                 <h6 className="fw-bold">View Faculty</h6>
@@ -103,7 +103,7 @@ export default function DashboardHome() {
           </Link>
         </div>
              <div className="col-md-3">
-          <Link to="/dashboard/faculty-leave" className="text-decoration-none">
+          <Link to="" className="text-decoration-none">
             <div className="card action-card action-primary text-cente">
               <div className="card-body">
                 <h6 className="fw-bold">Faculty Leave</h6>

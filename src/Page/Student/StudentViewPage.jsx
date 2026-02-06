@@ -39,9 +39,7 @@ export default function StudentViewPage() {
     }
   };
 
-  const handleUpdate = (id) => {
-    navigate(`/student/update/${id}`);
-  };
+
 
   return (
     <div className="container-fluid mt-3">
@@ -101,17 +99,14 @@ export default function StudentViewPage() {
                       <td>{s.yearOfPassing}</td>
                       <td>{s.course}</td>
                       <td>{s.branch ? s.branch : ""}</td>
-
-                      <td>
-                        <span
-                          style={{ cursor: "pointer" }}
-                          className="text-primary fs-5"
-                          onClick={() => handleUpdate(s.id)}
-                        >
-                          <i className="bi bi-pencil-fill"></i>
-                        </span>
-                      </td>
-
+                        <td>
+                        <Link
+                    to={`/studentupdate/${s.id}`} 
+                    className="text-primary fs-5"
+                  >
+                    <i className="bi bi-pencil-fill"></i>
+                  </Link>
+                </td>
                       <td>
                         <span
                           style={{ cursor: "pointer" }}

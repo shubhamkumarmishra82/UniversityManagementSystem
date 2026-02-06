@@ -69,17 +69,6 @@ export default function DashBoard() {
                 </ul>
               </li>
 
-              {/* Remaining dropdowns */}
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Update Information
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="#">Faculty</a></li>
-                  <li><a className="dropdown-item" href="#">Student</a></li>
-                </ul>
-              </li>
-
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle text-white fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Apply Leave

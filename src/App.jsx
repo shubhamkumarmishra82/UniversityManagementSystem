@@ -11,6 +11,7 @@ import FacultyView from "./Page/Faculty/FacultyViewPage";
 import FacultyUpdate from "./Page/Faculty/FacultyUpdate";
 import StudentCreatePage from "./Page/Student/StudentCreatePage";
 import StudentViewPage from "./Page/Student/StudentViewPage";
+import StudentUpdatePage from "./Page/Student/StudentUpdatePage";
 
 export default function App() {
 
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/facultyupdate/:id" element={<FacultyUpdate/>} />
          <Route path="/student" element={<StudentCreatePage/>}></Route>
          <Route path="/studentview" element={<StudentViewPage/>}></Route>
+         <Route path="/studentupdate/:id" element={<StudentUpdatePage/>} />  
 
        
       </Routes>
