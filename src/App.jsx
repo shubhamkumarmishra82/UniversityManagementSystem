@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./Page/HomePage";
-
 import Navbar1 from "./Component/navbar1";
 import CreateAdmin from "./Page/CreateAdmin";
 import AdminLogin from "./Page/AdminLogin";
@@ -15,6 +14,9 @@ import StudentUpdatePage from "./Page/Student/StudentUpdatePage";
 import StudentCreateLeaveForm from "./Page/StudentLeave/StudentCreateLeavePage";
 import StudentViewLeavePage from "./Page/StudentLeave/StudentViewLeavePage";
 import StudentUpdateLeaveForm from "./Page/StudentLeave/StudentUpdateLeavePage";
+import FacultyCreateLeavePage from "./Page/FacultyLeave/FacultyCreateLeavePage";
+import FacultyLeaveViewPage from "./Page/FacultyLeave/FacultyLeaveViewPage";
+import FacultyUpdateLeavePage from "./Page/FacultyLeave/FacultyUpdateLeavePage";
 
 export default function App() {
 
@@ -36,6 +38,9 @@ export default function App() {
          <Route path="/studentleave" element={<StudentCreateLeaveForm/>}></Route>
          <Route path="//student/view/leave" element={<StudentViewLeavePage/>}></Route>
          <Route path="/student/leave/update/:id" element={<StudentUpdateLeaveForm/>}></Route>
+         <Route path="/facultyleave" element={<FacultyCreateLeavePage/>}></Route>
+         <Route path="/faculty/view/leave" element={<FacultyLeaveViewPage/>}></Route>
+         <Route path="/faculty/leave/update/:id" element={<FacultyUpdateLeavePage/>}></Route>
  
        
       </Routes>

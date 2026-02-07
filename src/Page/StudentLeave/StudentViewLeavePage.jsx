@@ -77,7 +77,7 @@ export default function StudentViewLeavePage() {
                   <td>{leave.reason}</td>
                        <td>
                         <Link
-                    to={`/student/leave/update/${leave.id}`} 
+                    to={`/faculty/leave/update/${leave.id}`} 
                     className="text-primary fs-5"
                   >
                     <i className="bi bi-pencil-fill"></i>
